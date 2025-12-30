@@ -433,6 +433,7 @@ p {
 
 .g-4 > * {
   padding: calc(var(--space-lg) * 0.5);
+  width: 100%;
 }
 
 .g-4 {
@@ -1471,5 +1472,22 @@ section#hero .container {
 @media (min-width: 1024px) {
   body.nav-open {
     overflow: visible;
+  }
+}
+
+/* AUTO-INJECTED: bg-dark child text fix */
+.bg-dark > * {
+  color:white!important;
+}
+
+/* --- AUTO-INJECTED: AOS mobile/tablet override --- */
+@media (max-width: 1024px) {
+  [data-aos="fade-left"],
+  [data-aos="fade-right"] {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+  }
+  .c-logo__img {
+    display: none!important;
   }
 }
